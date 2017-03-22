@@ -1,0 +1,43 @@
+gameboy camera filter
+12 intensities ACTUALLY 13
+
+0 - all black
+1 - 8:1 black to dark grey
+2 - 1:1 black to dark grey
+3 - 1:8 black to dark grey
+4 - all dark grey
+5 - 8:1 dark grey to light grey
+6 - 1:1 dark grey to light gray
+7 - 1:8 dark grey to light gray
+8 - all light grey
+9 - 8:1 light grey to white 
+10 - 1:1 light grey to white
+11 - 1:8 light grey to white
+12 - all white
+
+1:8 pattern:
+xxx    ...
+x.x OR .X.
+xxx	   ...
+
+ACTUALLY 1:4 PATTERN WHOOPS DONE IN 2X2 pattern
+
+1:1 pattern:
+x.x.x.x
+.x.x.x.
+x.x.x.x
+.x.x.x.
+
+0: 0-18
+1: 18-38
+2: 38-58
+3: 58-78
+4: 78-97
+5: 97-117
+6: 117-137
+7: 137-157
+8: 157-176
+9: 176-196
+10: 196-216
+11: 216-236
+12: 236-255
