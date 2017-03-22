@@ -3,12 +3,15 @@ import numpy as np
 
 def main():
     """Main function"""
-    img = Image.open("test.jpg").convert('L')
+    filename = raw_input("Path to image: ")
+    img = Image.open(filename).convert('L')
     img = np.asarray(img)
     img.flags.writeable = True
     img = gbc_filter(img)
     img = Image.fromarray(img, 'L')
-    img.save("gbc_filter.png")
+    filename = filename.split(".")[0] + "_gbc_filter.png"
+    img.save(filename)
+    print("Saved to " + filename)
 
 def gbc_filter(img):
     """Applies Game Boy camera filter"""
